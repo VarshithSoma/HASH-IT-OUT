@@ -2,13 +2,20 @@
 * {
   font-family: "Jersey 15", sans-serif;
   color: white;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
 }
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
   font-family: "Jersey";
 }
 .jersey-15-regular {
@@ -20,7 +27,6 @@ body {
   display: flex;
   justify-content: space-around;
   color: white;
-  background-color: black;
   padding: 4rem 0;
   margin: 0 auto;
   width: 90%;
@@ -68,6 +74,7 @@ h1 {
   width: 150px;
   height: 100vh;
   background-color: black;
+  opacity: 0.3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,25 +111,8 @@ h1 {
   }
 }
 @media only screen and (max-width: 750px) {
-  .navbar {
-    opacity: 0;
-    padding: 16px 24px;
-    position: fixed;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 12;
-  }
-  .hamburger {
-    display: block;
-  }
-  .navbar .right {
+  .contrem {
     display: none;
-    z-index: 12;
   }
 }
 footer {
@@ -166,9 +156,6 @@ footer {
 }
 .right {
   border-bottom: 2px solid white;
-}
-.navbar {
-  background-color: black;
 }
 .main-context {
   display: flex;
@@ -318,6 +305,191 @@ main {
   color: black;
   text-decoration: none;
   font-size: 2em;
-  padding: 1em;
+  padding: 0.3em;
   margin: 20px;
+}
+.themes {
+  background-color: #db0031;
+  width: 70vw;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 60vw;
+}
+.themes h2 {
+  cursor: pointer;
+  background-color: #d9d9d9;
+  color: #da0035;
+  padding: 10px;
+  font-size: 2em;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  display: none; /* Initially hidden */
+}
+table,
+th,
+td {
+  color: black;
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+  font-size: 1.7em;
+}
+td {
+  font-size: 1.5em;
+  text-align: left;
+}
+.prms {
+  margin-top: 7em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rulebook {
+  background-color: #db0031;
+  border-radius: 1em;
+  padding: 2em;
+  width: 70vw;
+}
+.rulebook h1 {
+  font-size: 4em;
+}
+.rulebook-question {
+  background-color: #d9d9d9;
+  font-size: 2em;
+  border-radius: 0.1em;
+  padding: 0.3em;
+  color: black;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+.rulebook-answer li {
+  font-size: 1.5rem;
+}
+
+.rulebook-item {
+  margin-bottom: 20px;
+  background-color: #333;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.rulebook-question {
+  padding: 20px;
+  font-size: 2em;
+  background-color: #222;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.rulebook-question:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.rulebook-answer {
+  display: none;
+  padding: 20px;
+  background-color: #111;
+  border-top: 1px solid #db0031;
+  color: #ddd;
+}
+
+/* Smooth transition effect for answer */
+.rulebook-answer p {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.8;
+}
+
+.rulebook-question.open + .rulebook-answer {
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  .rulebook h1 {
+    font-size: 2em;
+  }
+  .rulebook-answer li {
+    margin: 0;
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0;
+  }
+  .rulebook ul {
+    padding: 0;
+  }
+  .faq h1 {
+    font-size: 2em;
+  }
+  .faq-answer {
+    margin: 0;
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0;
+    line-height: 0;
+  }
+  .faq p {
+    padding: 0;
+  }
+  .faq-section h1 {
+    font-size: 2em;
+  }
+
+  .faq-item {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #333;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    font-size: 2em;
+  }
+
+  .faq-answer p {
+    margin: 0;
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+  }
+  .faq-section {
+    width: 100vw;
+  }
+  #home {
+    margin-top: 10em;
+  }
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }

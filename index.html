@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="style.css" />
     <title>HASH-IT-OUT</title>
   </head>
+  <video
+    id="background-video"
+    autoplay
+    loop
+    muted
+    poster="vecteezy_race-flag_1788685.mp4"
+  >
+    <source src="vecteezy_race-flag_1788685.mp4" type="video/mp4" />
+  </video>
 
   <body>
-    <header class="navbar">
+    <header class="navbar prevent-select">
       <nav class="right">
         <a href="#home">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">THEMES</a>
+        <a href="#rulebook">ABOUT</a>
+        <a href="#themes">THEMES</a>
         <a href="#faq">FAQ</a>
-        <a href="#contactus">CONTACT US</a>
+        <a href="#contactus" class="contrem">CONTACT US</a>
       </nav>
       <div class="hamburger">
         <div class="bar1"></div>
@@ -25,9 +34,9 @@
     </header>
 
     <nav class="mobilenavbar">
-      <a href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">THEMES</a>
+      <a href="#home">HOME</a>
+      <a href="#rulebook">ABOUT</a>
+      <a href="#themes">THEMES</a>
       <a href="#faq">FAQ</a>
       <a href="#contactus">CONTACT</a>
     </nav>
@@ -41,12 +50,174 @@
         <h3 class="s">SEASON - 2</h3>
       </div>
     </main>
+    <div class="center">
+      <div class="rulebook" id="rulebook">
+        <section class="rulebook-section">
+          <h1>Rulebook for Problem Statement Selection</h1>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              1. Problem Statement Release
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  A document containing all available problem statements will be
+                  shared in the designated group at the beginning of the
+                  selection process.
+                </li>
+                <li>
+                  Participants must review the problem statements carefully
+                  during this time.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              2. Selection Process
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  <strong>Time Frame:</strong> Participants will have 15 minutes
+                  from the time the problem statement document is shared to make
+                  their selections.
+                </li>
+                <li>
+                  <strong>Spreadsheet Access:</strong> A spreadsheet for problem
+                  statement selection will be provided 15 minutes after the
+                  problem statement document is released.
+                </li>
+                <li>
+                  <strong>Closing of Spreadsheet:</strong> The spreadsheet will
+                  close 15 minutes after it has been opened. Participants must
+                  select their problem statement within this timeframe.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              3. Locking in Problem Statements
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  To lock in a problem statement, teams must select their
+                  desired statement from the spreadsheet and input the
+                  corresponding Problem Statement ID.
+                </li>
+                <li>
+                  <strong>First-Come, First-Serve Basis:</strong> Each problem
+                  statement can only be chosen by a maximum of three teams. Once
+                  a statement has been selected by three teams, it will be
+                  marked as unavailable in the spreadsheet.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              4. Team Selection Rules
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  Each team must designate a team leader responsible for making
+                  the selection and entering the Problem Statement ID in the
+                  spreadsheet.
+                </li>
+                <li>
+                  Teams must ensure they are selecting a problem statement that
+                  aligns with their skills and interests.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              5. Confirmation of Selection
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  After the spreadsheet closes, the organizers will confirm the
+                  selections and notify teams of their assigned problem
+                  statements.
+                </li>
+                <li>
+                  Teams must check the final selection list to ensure their
+                  choice is confirmed.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              6. Changes to Selections
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  Once the spreadsheet is closed and selections are confirmed,
+                  no changes to problem statement selections will be allowed.
+                </li>
+                <li>
+                  Teams are encouraged to discuss and finalize their choices
+                  prior to the selection deadline.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              7. Communication
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  Any questions or issues regarding the selection process should
+                  be directed to the organizers in the group chat or during
+                  designated Q&A sessions.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rulebook-item">
+            <div class="rulebook-question" onclick="toggleAnswer(this)">
+              8. Fair Play
+            </div>
+            <div class="rulebook-answer">
+              <ul>
+                <li>
+                  All teams are expected to adhere to the rules and respect each
+                  other’s selections.
+                </li>
+                <li>
+                  Any attempts to manipulate the selection process may result in
+                  disqualification.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
+    <div class="prms" id="themes">
+      <div class="themes">
+        <h1>THEMES :</h1>
+        <h2>Web Development</h2>
+        <h2>AI/ML (Artificial Intelligence / Machine Learning)</h2>
+        <h2>Blockchain</h2>
+        <h2>Software-Development</h2>
+        <h2>Web Development Problem Statements</h2>
+      </div>
+    </div>
     <div class="faq" id="faq">
       <div class="container">
         <section class="faq-section">
           <h1>FAQ ( Frequently Asked Questions )</h1>
-
           <div class="faq-item">
             <div class="faq-question" onclick="toggleAnswer(this)">
               1. I am a beginner, can I participate?
@@ -60,7 +231,6 @@
               </p>
             </div>
           </div>
-
           <div class="faq-item">
             <div class="faq-question" onclick="toggleAnswer(this)">
               2. Will food & stay be provided?
