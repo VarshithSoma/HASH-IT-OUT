@@ -3,6 +3,10 @@
   font-family: "Jersey 15", sans-serif;
   color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   font-family: "Jersey";
@@ -101,6 +105,7 @@ h1 {
 }
 @media only screen and (max-width: 750px) {
   .navbar {
+    opacity: 0;
     padding: 16px 24px;
     position: fixed;
     box-sizing: border-box;
@@ -189,4 +194,130 @@ main {
 .s {
   font-size: 60px;
   margin-top: 15px;
+}
+@font-face {
+  font-family: "Jersey 15";
+  src:
+    url("../fonts/Jersey15.woff2") format("woff2"),
+    url("../fonts/Jersey15.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jersey";
+  src:
+    url("../fonts/Jersey.woff2") format("woff2"),
+    url("../fonts/Jersey.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  padding-top: 3rem;
+  margin-top: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.faq-section {
+  /* margin: 40px; */
+  background-color: #db0031;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 100vw;
+}
+
+.faq-section h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  font-family: "Jersey 15";
+  margin-bottom: 30px;
+  width: 60vw;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background-color: #333;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px;
+  font-size: 2em;
+  background-color: #222;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.faq-answer {
+  display: none;
+  padding: 20px;
+  background-color: #111;
+  border-top: 1px solid #db0031;
+  color: #ddd;
+}
+
+/* Smooth transition effect for answer */
+.faq-answer p {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.8;
+}
+
+.faq-question.open + .faq-answer {
+  display: block;
+}
+.main-context {
+  height: 90vh;
+}
+
+.contactus .container {
+  background-color: #db0031;
+  width: 70vw;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 60vw;
+}
+.contactus h1 {
+  font-size: 28px;
+  color: #fff;
+  font-family: "Jersey 15";
+  margin-bottom: 30px;
+  display: block;
+}
+.contactus .container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links a {
+  background-color: white;
+  font-family: "Jersey 15", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 1em;
+  margin: 20px;
 }
