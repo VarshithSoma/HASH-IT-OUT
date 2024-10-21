@@ -9,3 +9,11 @@ hamburger.addEventListener("click",()=>{
     bar3.classList.toggle("bar3as");
     mobd.classList.toggle("opennavmob")
 })
+function toggleAnswer(questionElement) {
+    const answer = questionElement.nextElementSibling;
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+    } else {
+        answer.style.display = "block";
+    }
+}
