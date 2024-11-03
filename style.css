@@ -17,10 +17,12 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   font-family: "Jersey";
+  height: 100%;
 }
 .jersey-15-regular {
   font-family: "Jersey 15", sans-serif;
@@ -64,15 +66,7 @@ h1 {
   margin-left: 4%;
   margin-right: 4%;
 }
-.bar1,
-.bar2,
-.bar3 {
-  background-color: white;
-  height: 4px;
-  width: 36px;
-  margin-top: 8px;
-  border-radius: 20px;
-}
+
 .mobilenavbar {
   z-index: 5;
   width: 150px;
@@ -122,41 +116,6 @@ h1 {
 footer {
   text-align: center;
   padding: 4rem;
-}
-.bar1as {
-  animation: bar1a 0.2s forwards;
-}
-.bar2as {
-  animation: fadebar2 0.1s forwards;
-}
-.bar3as {
-  animation: bar2a 0.2s forwards;
-}
-@keyframes bar1a {
-  from {
-    tranform: rotate(0);
-  }
-  to {
-    transform: rotate(45deg) translate(5px, 13px);
-  }
-}
-@keyframes bar2a {
-  from {
-    tranform: rotate(0);
-  }
-  to {
-    transform: rotate(-46deg) translate(4px, -12px);
-  }
-}
-@keyframes fadebar2 {
-  from {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-  to {
-    transform: scaleX(0);
-    opacity: 0;
-  }
 }
 .right {
   border-bottom: 2px solid white;
@@ -479,9 +438,6 @@ td {
   .faq-section {
     width: 90vw;
   }
-  #home {
-    margin-top: 10em;
-  }
 }
 
 #background-video {
@@ -579,12 +535,7 @@ td {
   bottom: 0;
   z-index: -1;
 }
-.logohash {
-  width: 300px;
-  margin: 0;
-  padding: 0;
-  transform: scale(2);
-}
+
 .register-btn {
   background-color: #e74c3c;
   color: white;
@@ -595,11 +546,6 @@ td {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: -90px; /* Add space between button and logo */
-}
-.home img {
-  width: 20px;
-  margin: 0;
-  padding: 0;
 }
 
 .register-btn:hover {
@@ -630,25 +576,6 @@ img {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-body {
-  overflow-x: hidden;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  display: block; /* Helps eliminate extra space */
-}
-
-.section-container {
-  /* Apply this to the section's container */
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.center {
-  padding: 0;
 }
 @media only screen and (max-width: 750px) {
   .faq-section,
