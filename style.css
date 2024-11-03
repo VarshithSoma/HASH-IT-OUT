@@ -11,6 +11,10 @@
   -khtml-user-select: none; /* webkit (konqueror) browsers */
   -ms-user-select: none; /* IE10+ */
 }
+:root {
+  --main-width: 90vw;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -160,6 +164,7 @@ footer {
 .main-context {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .main {
   color: #da0035;
@@ -206,7 +211,6 @@ main {
   align-content: center;
   align-items: center;
   justify-content: center;
-  width: 50%;
   margin: 0 auto;
 }
 .faq-section {
@@ -215,7 +219,7 @@ main {
   padding: 60px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  max-width: 100vw;
+  width: 70vw;
 }
 
 .faq-section h1 {
@@ -271,16 +275,15 @@ main {
   display: block;
 }
 .main-context {
-  height: 90vh;
+  height: 100vh;
 }
 
 .contactus .container {
   background-color: #db0031;
-  width: 70vw;
+  width: 60vw;
   padding: 60px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  max-width: 60vw;
 }
 .contactus h1 {
   font-size: 28px;
@@ -314,7 +317,7 @@ main {
   padding: 60px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  max-width: 60vw;
+  margin-top: 50px;
 }
 .themes h2 {
   cursor: pointer;
@@ -346,7 +349,6 @@ td {
   text-align: left;
 }
 .prms {
-  margin-top: 7em;
   width: 100%;
   display: flex;
   align-items: center;
@@ -475,7 +477,7 @@ td {
     line-height: 2rem;
   }
   .faq-section {
-    width: 100vw;
+    width: 90vw;
   }
   #home {
     margin-top: 10em;
@@ -492,4 +494,170 @@ td {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.gallery-section .container {
+  background-color: #db0031; /* Same background color as contactus */
+  width: 70vw; /* Same width */
+  padding: 60px; /* Same padding */
+  border-radius: 12px; /* Same border radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Same box shadow */
+  margin-top: 10vh; /* Space from the top */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.gallery-section h1 {
+  font-size: 28px; /* Same font size as contactus */
+  color: #fff; /* White color for the title */
+  font-family: "Jersey 15"; /* Same font family */
+  margin-bottom: 30px; /* Margin below the title */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  gap: 20px; /* Space between images */
+  padding: 0 20px; /* Padding for gallery items */
+  width: 100%; /* Full width of the container */
+}
+
+.gallery-item {
+  position: relative; /* To position the image squarely */
+  height: 250px; /* Fixed height for squares */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%; /* Make images square */
+  object-fit: cover; /* Cover the area without stretching */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.aboutus .container {
+  background-color: #db0031; /* Same background color as contactus */
+  width: 70vw; /* Same width */
+  padding: 60px; /* Same padding */
+  border-radius: 12px; /* Same border radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Same box shadow */
+  margin-top: 10vh; /* Space from the top */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.aboutus h1 {
+  font-size: 35px; /* Same font size as contactus */
+  color: #fff; /* White color for the title */
+  font-family: "Jersey 15"; /* Same font family */
+  margin-bottom: 30px; /* Margin below the title */
+}
+
+.aboutus p {
+  font-size: 28px; /* Font size for paragraphs */
+  color: #fff; /* White color for text */
+  line-height: 1.6; /* Spacing between lines for readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.logohash {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  transform: scale(2);
+}
+.register-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 13px 44px;
+  font-size: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: -90px; /* Add space between button and logo */
+}
+.home img {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.register-btn:hover {
+  background-color: #c0392b;
+}
+.img-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  margin-top: -100px;
+}
+.imghash {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block; /* Removes any extra space below the image */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: block; /* Helps eliminate extra space */
+}
+
+.section-container {
+  /* Apply this to the section's container */
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.center {
+  padding: 0;
+}
+@media only screen and (max-width: 750px) {
+  .faq-section,
+  .themes,
+  .rulebook,
+  .gallery-section .container,
+  .aboutus .container,
+  .contactus.container,
+  .contactus .container {
+    width: var(--main-width);
+  }
 }
