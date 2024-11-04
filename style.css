@@ -29,6 +29,30 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+@media only screen and (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .navbar .img-logo {
+    width: 200px; /* Adjust width for mobile view */
+    height: 200px; /* Adjust height for mobile view */
+    margin-bottom: 1rem;
+  }
+
+  .navbar .right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar .right a {
+    margin-bottom: 10px;
+    font-size: 20px; /* Adjust font size for mobile view */
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -327,6 +351,7 @@ td {
 }
 .rulebook h1 {
   font-size: 4em;
+  padding-bottom: 15px;
 }
 .rulebook-question {
   background-color: #d9d9d9;
@@ -484,7 +509,22 @@ td {
   height: 250px; /* Fixed height for squares */
   overflow: hidden; /* Prevent overflow */
 }
+@media only screen and (max-width: 750px) {
+  .gallery {
+    grid-template-columns: 1fr; /* One image per row */
+    gap: 10px; /* Reduce space between images */
+    padding: 0 10px; /* Reduce padding for gallery items */
+  }
 
+  .gallery-item {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .gallery-item img {
+    border-radius: 5px; /* Slightly less rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+}
 .gallery-item img {
   width: 100%;
   height: 100%; /* Make images square */
@@ -497,6 +537,7 @@ td {
 .gallery-item img:hover {
   transform: scale(1.05); /* Scale up on hover */
 }
+
 
 .aboutus .container {
   background-color: #db0031; /* Same background color as contactus */
@@ -587,4 +628,11 @@ img {
   .contactus .container {
     width: var(--main-width);
   }
+}
+footer {
+  text-align: center;
+  padding: 4rem;
+  font-size: 2em; /* Make the text big */
+
+  color: #fff; /* Ensure the text color is white */
 }
