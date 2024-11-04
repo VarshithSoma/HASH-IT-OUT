@@ -187,6 +187,16 @@ main {
   font-weight: normal;
   font-style: normal;
 }
+.register-btn {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  .register-btn {
+    margin-top: 10px; 
+  }
+}
+
 .container {
   display: flex;
   padding-top: 3rem;
@@ -258,12 +268,12 @@ main {
   display: block;
 }
 .main-context {
-  height: 100vh;
+  height: 70vh;
 }
 
 .contactus .container {
   background-color: #db0031;
-  width: 60vw;
+  width: 70vw;
   padding: 60px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -304,8 +314,8 @@ main {
 }
 .themes h2 {
   cursor: pointer;
-  background-color: #d9d9d9;
-  color: #da0035;
+  background-color: #000000;
+  color: #ffffff;
   padding: 10px;
   font-size: 2em;
   border-radius: 5px;
@@ -627,6 +637,12 @@ img {
   .contactus.container,
   .contactus .container {
     width: var(--main-width);
+  }
+
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 }
 footer {
