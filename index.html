@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="imgs/HashitoutLogoR.png" type="image/x-icon" />
     <title>HASH-IT-OUT</title>
@@ -28,10 +29,11 @@
         <img
           src="./imgs/sdc_black[1].png"
           alt="SDC Logo"
-          style="height: 80px; margin-right: 20px"
+          class="logo-main"
+          style="height: 70px"
         />
         <a href="#home">HOME</a>
-        <a href="#rulebook">ABOUT</a>
+        <a href="#rulebook" class="aboutrem">ABOUT</a>
         <a href="#themes">THEMES</a>
         <a href="#faq">FAQ</a>
         <a href="#contactus" class="contrem">CONTACT US</a>
@@ -62,9 +64,23 @@
             class="imghash"
           />
         </div>
-        <button class="register-btn">Register</button>
       </div>
     </main>
+    <div class="register">
+      <a
+        href="https://lu.ma/event/evt-quKOF8D0hi8zPhA"
+        class="luma-checkout--button"
+        data-luma-action="checkout"
+        data-luma-event-id="evt-quKOF8D0hi8zPhA"
+      >
+        Register for Event
+      </a>
+
+      <script
+        id="luma-checkout"
+        src="https://embed.lu.ma/checkout-button.js"
+      ></script>
+    </div>
     <div class="center">
       <div class="rulebook" id="rulebook">
         <section class="rulebook-section">
@@ -321,7 +337,7 @@
     </div>
     <footer class="footer">
       <div class="container">
-        <p>Made with 💓 by SDC</p>
+        <p>© SDC</p>
       </div>
     </footer>
     <script src="index.js"></script>

@@ -30,27 +30,22 @@ body {
   font-style: normal;
 }
 @media only screen and (max-width: 750px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-  }
-
   .navbar .img-logo {
     width: 200px; /* Adjust width for mobile view */
     height: 200px; /* Adjust height for mobile view */
     margin-bottom: 1rem;
   }
-
-  .navbar .right {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  .contrem {
+    display: none;
   }
-
+  .aboutrem {
+    display: none;
+  }
   .navbar .right a {
     margin-bottom: 10px;
-    font-size: 20px; /* Adjust font size for mobile view */
+    font-size: 27px; /* Adjust font size for mobile view */
+    padding-left: 10px;
+    padding-right: 15px;
   }
 }
 .navbar {
@@ -105,7 +100,7 @@ h1 {
   z-index: 2;
   top: 0;
   right: -190px;
-  padding: 1rem;
+  padding: 0.8rem;
   transition: transform 0.5s;
   font-family: "Jersey 15";
   font-size: 20px;
@@ -209,7 +204,7 @@ main {
 .faq-section {
   /* margin: 40px; */
   background-color: #db0031;
-  padding: 60px;
+  padding: 50px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   width: 70vw;
@@ -232,7 +227,7 @@ main {
 }
 
 .faq-question {
-  padding: 20px;
+  padding: 15px;
   font-size: 2em;
   background-color: #222;
   cursor: pointer;
@@ -251,7 +246,7 @@ main {
 
 .faq-answer {
   display: none;
-  padding: 20px;
+  padding: 15px;
   background-color: #111;
   border-top: 1px solid #db0031;
   color: #ddd;
@@ -274,7 +269,7 @@ main {
 .contactus .container {
   background-color: #db0031;
   width: 70vw;
-  padding: 60px;
+  padding: 50px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -301,13 +296,13 @@ main {
   color: black;
   text-decoration: none;
   font-size: 2em;
-  padding: 0.3em;
+  padding: 0.2em;
   margin: 20px;
 }
 .themes {
   background-color: #db0031;
   width: 70vw;
-  padding: 60px;
+  padding: 50px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
@@ -356,7 +351,7 @@ td {
 .rulebook {
   background-color: #db0031;
   border-radius: 1em;
-  padding: 2em;
+  padding: 1.5em;
   width: 70vw;
 }
 .rulebook h1 {
@@ -367,7 +362,7 @@ td {
   background-color: #d9d9d9;
   font-size: 2em;
   border-radius: 0.1em;
-  padding: 0.3em;
+  padding: 0.2em;
   color: black;
   transition:
     background-color 0.3s,
@@ -421,6 +416,10 @@ td {
   display: block;
 }
 @media only screen and (max-width: 750px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .rulebook h1 {
     font-size: 2em;
   }
@@ -490,7 +489,7 @@ td {
 .gallery-section .container {
   background-color: #db0031; /* Same background color as contactus */
   width: 70vw; /* Same width */
-  padding: 60px; /* Same padding */
+  padding: 50px; /* Same padding */
   border-radius: 12px; /* Same border radius */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Same box shadow */
   margin-top: 10vh; /* Space from the top */
@@ -551,7 +550,7 @@ td {
 .aboutus .container {
   background-color: #db0031; /* Same background color as contactus */
   width: 70vw; /* Same width */
-  padding: 60px; /* Same padding */
+  padding: 50px; /* Same padding */
   border-radius: 12px; /* Same border radius */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Same box shadow */
   margin-top: 10vh; /* Space from the top */
@@ -609,7 +608,7 @@ td {
   height: 400px;
   margin: 0;
   padding: 0;
-  margin-top: -100px;
+  margin-top: -120px;
 }
 .imghash {
   margin: 0;
@@ -644,11 +643,67 @@ img {
     margin: 0;
     padding: 0;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 footer {
   text-align: center;
   padding: 4rem;
   font-size: 2em; /* Make the text big */
-
   color: #fff; /* Ensure the text color is white */
+}
+.logo-main {
+  transform: scale(0.8);
+  margin-bottom: 15px;
+}
+.imghash {
+  transform: scale(1.35);
+}
+.center {
+  margin-top: 180px;
+}
+.register {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+}
+.register a {
+  background-color: #da0035;
+}
+.luma-checkout--button {
+  transform: scale(1.6);
+}
+.contactus .container {
+  padding: 30px;
+}
+.aboutus .container {
+  padding: 30px;
+}
+.aboutus h1 {
+  margin-bottom: 0;
+}
+.faq-section {
+  padding: 30px;
+}
+.themes {
+  padding: 30px;
+}
+.rulebook {
+  padding: 30px;
+}
+.name {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.sub {
+  margin-bottom: 1.3em;
+}
+.sub {
+  font-size: 1.5em;
+}
+html {
+  scroll-behavior: smooth;
 }
