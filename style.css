@@ -668,7 +668,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -200px;
+  margin-top: -180px;
 }
 .register a {
   background-color: #da0035;
@@ -706,4 +706,19 @@ footer {
 }
 html {
   scroll-behavior: smooth;
+}
+.register a {
+  padding: 0.7em;
+  border-radius: 2em;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+.register a:hover {
+  transform: scale(1.657);
+  transition-duration: 4ms;
+}
+@media only screen and (max-width: 750px) {
+  .register a {
+    padding: 0.5em;
+  }
 }
