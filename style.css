@@ -721,4 +721,23 @@ html {
   .register a {
     padding: 0.5em;
   }
+  .navbar {
+    margin-top: -1.5rem;
+  }
+  .navbar .right a {
+    font-size: 24px;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .navbar .right a {
+    font-size: 21px;
+    padding-left: 0;
+    padding-right: 13px;
+  }
+  .right {
+    display: flex;
+    justify-content: space-around;
+  }
 }
