@@ -668,13 +668,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -180px;
 }
 .register a {
   background-color: #da0035;
 }
 .luma-checkout--button {
-  transform: scale(1.6);
+  transform: scale(1.5);
 }
 .contactus .container {
   padding: 30px;
@@ -708,7 +707,7 @@ html {
   scroll-behavior: smooth;
 }
 .register a {
-  padding: 0.5em;
+  padding: 0.7em;
   border-radius: 2em;
   font-size: 1em;
   text-decoration: none;
@@ -719,7 +718,7 @@ html {
 }
 @media only screen and (max-width: 750px) {
   .register a {
-    padding: 0.3em;
+    padding: 0.5em;
   }
   .navbar {
     margin-top: -1.5rem;
@@ -792,4 +791,7 @@ html {
 }
 .register {
   margin-top: 3em;
+}
+.center {
+  margin-top: 180px;
 }
