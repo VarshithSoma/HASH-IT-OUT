@@ -708,18 +708,18 @@ html {
   scroll-behavior: smooth;
 }
 .register a {
-  padding: 0.7em;
+  padding: 0.5em;
   border-radius: 2em;
-  font-size: 1.1em;
+  font-size: 1em;
   text-decoration: none;
 }
 .register a:hover {
-  transform: scale(1.657);
+  transform: scale(1.5);
   transition-duration: 4ms;
 }
 @media only screen and (max-width: 750px) {
   .register a {
-    padding: 0.5em;
+    padding: 0.3em;
   }
   .navbar {
     margin-top: -1.5rem;
