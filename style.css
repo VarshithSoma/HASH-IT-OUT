@@ -795,3 +795,7 @@ html {
 .center {
   margin-top: 180px;
 }
+html {
+  background-color: black;
+  z-index: -100;
+}
