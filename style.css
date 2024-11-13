@@ -741,3 +741,55 @@ html {
     justify-content: space-around;
   }
 }
+.containe-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  margin-top: 140px;
+}
+.oimg {
+  width: 70vw;
+  border-radius: 1em;
+  padding: 30px;
+}
+
+.oimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.oimg img {
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.oimg img {
+  width: 30%; /* Smaller size for other images */
+  height: auto;
+}
+.chh2 {
+  transform: scale(0.6);
+  margin-top: 30px;
+}
+@media only screen and (max-width: 650px) {
+  .oimg img {
+    width: 90%; /* Smaller size for other images */
+    height: auto;
+  }
+  .oimg {
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+  }
+  .chh2 {
+    margin-top: -25px;
+    transform: scale(0.6);
+  }
+}
+.register {
+  margin-top: 1em;
+}
