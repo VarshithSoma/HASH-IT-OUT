@@ -661,7 +661,7 @@ footer {
   transform: scale(1.35);
 }
 .center {
-  margin-top: 180px;
+  margin-top: 60px;
 }
 .register {
   width: 100%;
@@ -791,5 +791,5 @@ html {
   }
 }
 .register {
-  margin-top: 1em;
+  margin-top: 3em;
 }
