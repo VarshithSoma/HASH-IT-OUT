@@ -33,6 +33,25 @@ function toggleTable(tableId) {
     table.style.display = "none";
   }
 }
+function updateCountdown() {
+  const now = new Date();
+  const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+  const timeRemaining = endOfDay - now;
+
+  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  document.getElementById('countdown-timer').textContent = `${hours}h ${minutes}m ${seconds}s`;
+
+  if (timeRemaining < 0) {
+    clearInterval(countdownInterval);
+    document.getElementById('countdown-timer').textContent = "Registration Closed";
+  }
+}
+
+const countdownInterval = setInterval(updateCountdown, 1000);
+updateCountdown();
 function toggleAnswer(element) {
   var answer = element.nextElementSibling;
   answer.style.display = answer.style.display === "block" ? "none" : "block";
